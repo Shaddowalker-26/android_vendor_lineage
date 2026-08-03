@@ -299,6 +299,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/crowdin/overlay
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/lineage/build/target/product/security/lineage
 
+# Build fingerprint spoof for Google services compatibility
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildFingerprint=google/mustang_beta/mustang:CANARY/ZP11.260618.005/15760424:user/release-keys
+
 include vendor/lineage/config/version.mk
 
 -include vendor/lineage-priv/keys/keys.mk
